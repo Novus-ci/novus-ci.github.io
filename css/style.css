@@ -7,8 +7,8 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    padding-top: 30px;
-}
+    padding-top: 0px;
+} 
  .home-grid{
     width: 630px;
     margin: 0px auto;
@@ -38,6 +38,7 @@ h1{
     margin: 10px ;
     box-shadow: 6px 6px 10px 0 #808080;
     margin-top: 10px;
+    background-color: #fff;
 }
 
 .page-content{
@@ -54,22 +55,28 @@ h1{
     padding-bottom: 0px;
 }
 
-nav ul{
+.clinics-card ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
     padding-left: 50px;
     margin-top: 20px;
     margin-bottom: 50px;
 
 }
 
-nav ul li{
+.clinics-card ul li{
     padding-bottom: 5px;
+    list-style: none;
+    border: 1px solid #333;
 }
 
-nav ul li a{
-    transform: rotate(180deg);
+.clinics-card ul li a{
+    display: block;
+    padding: 10px;
 }
 
-nav ul li a:hover{
+.clinics-card ul li a:hover{
     transform: rotate(0deg);
 }
 
